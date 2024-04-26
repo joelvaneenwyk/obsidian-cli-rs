@@ -9,7 +9,7 @@ pub fn select_open() -> Result<()> {
 }
 
 pub fn args_open(vault_selected: String) -> Result<()> {
-    // TODO add check for vault existence
+    // #todo add check for vault existence
     _open(vault_selected)
 }
 

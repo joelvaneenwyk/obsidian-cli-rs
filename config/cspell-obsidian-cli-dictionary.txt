@@ -1,3 +1,7 @@
 # Custom Dictionary Words
+clippy
 koots
+moonrepo
+rsplit
+rustfmt
 Zhin

@@ -1,6 +1,8 @@
-# Obsidian Launcher
+# Obsidian CLI
 
 > ⚠️ This is a fork of [obs](https://github.com/kootsZhin/obs) by [kootsZhin](https://github.com/kootsZhin). There are no additional changes or benefits from using this forked repository yet as this is only here to evaluate what work remains and if this is maintainable enough to rely on.
+>
+> 📢 Please note that `obs` is under active development and currently only support MacOS, please report any issue while using!
 
 <!-- markdownlint-disable MD033 -->
 
@@ -8,12 +10,10 @@
     <div>
       <img alt="Obsidian logo" src="./assets/obsidian.png" width="200"/>
       <br/>
-      <code>obs</code> - the Obsidian CLI
+      <code>$ obs</code> // Obsidian CLI
     </div>
     <div id="readme-description" style="font-size: 70%; padding-top:10px">⚡️ Connecting your second brain to the terminal ⚡️</div>
 </h1>
-
-> 📢 Please note that `obs` is under active development and currently only support MacOS, please report any issue while using!
 
 ## Features
 
