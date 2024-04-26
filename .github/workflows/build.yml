@@ -11,13 +11,25 @@ env:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, macos-latest, windows-latest]
+
+    runs-on: ${{ matrix.os }}
 
     steps:
       - uses: actions/checkout@v4
         with:
           submodules: recursive
           fetch-depth: 0
+
+      - uses: moonrepo/setup-rust@v1
+        with:
+          cache-base: (main|develop)
+          components: rustfmt, clippy
+        env:
+          GITHUB_TOKEN: ${{ github.token}}
 
       - name: Build
         run: cargo build --verbose
