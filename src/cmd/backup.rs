@@ -7,7 +7,7 @@ use crate::Vault;
 pub fn backup() -> Result<()> {
     let is_vault = Vault::is_valid_vault();
 
-    // TODO handle error better
+    // #todo handle error better
     if !(is_vault) {
         panic!("not in vault")
     }
