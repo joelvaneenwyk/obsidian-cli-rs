@@ -1,11 +1,17 @@
+# Obsidian Launcher
+
+> ⚠️ This is a fork of [obs](https://github.com/kootsZhin/obs) by [kootsZhin](https://github.com/kootsZhin). There are no additional changes or benefits from using this forked repository yet as this is only here to evaluate what work remains and if this is maintainable enough to rely on.
+
+<!-- markdownlint-disable MD033 -->
+
 <h1 id="readme-title" align="center">
-    <img src="./assets/obsidian.png" width="200"/>
+    <img alt="Obsidian logo" src="./assets/obsidian.png" width="200"/>
     <br>
-    obs - the Obsidian CLI
+    <code>obs</code> - the Obsidian CLI
 </h1>
 
 <h4 id="readme-description" align="center">
-    ⚡️ Connecting your second brain to the termainl - blazing fast ⚡️
+    ⚡️ Connecting your second brain to the terminal - blazing fast ⚡️
 </h4>
 
 ## Note 🚧
@@ -16,7 +22,7 @@
 
 - Fast & easy access to vaults from terminal in seconds
 - Backup your vault to remote git effortlessly
-- Flat learning curve without the need to memorize complciated commands
+- Flat learning curve without the need to memorize complicated commands
 - Automatically fetch vault list from Obsidian, no extra config needed
 
 <p align="center">
@@ -41,18 +47,18 @@
 
 1. Install `obs`
 
-```bash
-cargo install obs
-```
+    ```bash
+    cargo install obs
+    ```
 
 2. Put this in your `.zshrc` (or equivalent)
 
-```bash
-obs() {
-    local result=$(command obs "$@")
-    [ -n "$result" ] && cd -- "$result"
-}
-```
+    ```bash
+    obs() {
+        local result=$(command obs "$@")
+        [ -n "$result" ] && cd -- "$result"
+    }
+    ```
 
 3. Start using: `obs`!
 
