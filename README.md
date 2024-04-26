@@ -5,18 +5,15 @@
 <!-- markdownlint-disable MD033 -->
 
 <h1 id="readme-title" align="center">
-    <img alt="Obsidian logo" src="./assets/obsidian.png" width="200"/>
-    <br>
-    <code>obs</code> - the Obsidian CLI
+    <div>
+      <img alt="Obsidian logo" src="./assets/obsidian.png" width="200"/>
+      <br/>
+      <code>obs</code> - the Obsidian CLI
+    </div>
+    <div id="readme-description" style="font-size: 70%; padding-top:10px">⚡️ Connecting your second brain to the terminal ⚡️</div>
 </h1>
 
-<h4 id="readme-description" align="center">
-    ⚡️ Connecting your second brain to the terminal - blazing fast ⚡️
-</h4>
-
-## Note 🚧
-
-- `obs` is under active development and currently only support MacOS, please report any issue while using!
+> 📢 Please note that `obs` is under active development and currently only support MacOS, please report any issue while using!
 
 ## Features
 
