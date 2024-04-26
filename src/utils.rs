@@ -25,13 +25,14 @@ impl Vault {
     pub fn get_vaults() -> Result<Vec<Vault>> {
         let mut res: Vec<Vault> = Vec::new();
 
+        // #todo make this cross platform
         let path = home_dir().unwrap();
         let cfg_path = format!(
             "{path}/Library/Application Support/obsidian/obsidian.json",
             path = path.to_string_lossy()
         );
 
-        // TODO only working with mac default for now
+        // #todo this only works for mac
         let data = read_to_string(cfg_path).unwrap();
 
         let json: HashMap<String, HashMap<String, ObsJsonVault>> = from_str(&data).unwrap();
