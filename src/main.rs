@@ -15,7 +15,8 @@ fn main() -> Result<()> {
         // Reference: https://github.com/mgunyho/tere/blob/master/src/main.rs#L28
         // custom error handling: clap writes '--help' and '--version'
         // to stdout by default, but we want to print those to stderr
-        // as well to not interfere with the intended behavior of tere
+        // as well to not interfere with the intended behavior of the
+        // 'mgunyho/tere' library.
         eprint!("{}", err);
         std::process::exit(1);
     });
