@@ -2,5 +2,6 @@
 clippy
 koots
 moonrepo
+rsplit
 rustfmt
 Zhin

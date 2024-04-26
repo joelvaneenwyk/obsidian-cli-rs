@@ -1,12 +1,12 @@
-use dialoguer::{theme::ColorfulTheme, Select};
+use std::collections::HashMap;
+use std::fs::read_to_string;
 use std::path::Path;
 
+use dialoguer::{theme::ColorfulTheme, Select};
 use eyre::Result;
 use home::home_dir;
 use serde::Deserialize;
 use serde_json::from_str;
-use std::collections::HashMap;
-use std::fs::read_to_string;
 
 #[derive(Deserialize)]
 #[allow(dead_code)]
@@ -42,7 +42,7 @@ impl Vault {
             let (_, name) = value.path.rsplit_once('/').unwrap();
             res.push(Vault {
                 name: name.to_string(),
-                path: path,
+                path,
             })
         }
 
