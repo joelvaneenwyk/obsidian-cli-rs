@@ -377,8 +377,8 @@ dependencies = [
 ]
 
 [[package]]
-name = "obs"
-version = "0.1.0"
+name = "obsidian-cli"
+version = "0.1.1"
 dependencies = [
  "chrono",
  "clap",
